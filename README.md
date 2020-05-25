@@ -2,9 +2,9 @@
 ## Organized by:
 
 ```markdown
--Dataset (i.e. Iris, MNIST, ImageNet)
----Framework (i.e. TensorFlow, XGBoost)
-----Platform (i.e. Colab, Google Cloud AI Platform, etc.)
+-dataset (i.e. Iris, MNIST, ImageNet)
+---framework (i.e. TensorFlow, XGBoost)
+----platform (i.e. Colab, Google Cloud AI Platform, etc.)
 -----notebooks
 -----scripts
 -----trainer
