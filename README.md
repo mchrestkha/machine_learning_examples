@@ -10,7 +10,11 @@
 
 ```
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| Framework   | Platform  |Description |
+| ----------- | ----------- |----------- |
+| TensorFlow Estimator | Title       |Title       |
+| Paragraph   | Text        |Text        |
+| Paragraph   | Text        |Text        |
+| Paragraph   | Text        |Text        |
+| Paragraph   | Text        |Text        |
+| Paragraph   | Text        |Text        |
