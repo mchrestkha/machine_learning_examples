@@ -12,9 +12,9 @@
 
 | Framework            | Colab Notebook |AI Platform | KubeFlow | MLFlow | 
 | -----------          | ----------- |----------- |----------|----------|
-| TensorFlow Estimator |        |       |     |                 |
-| TensorFlow Keras     |         |        |     |                 |
+| TensorFlow Estimator |        | Epsilon: DNNEstimator Single-Node Multi-GPU Training WIP       |     |                 |
+| TensorFlow Keras     |         | ImageNet: Single-Node Multi-GPU Training WIP         |     |                 |
 | PyTorch              |         |        |     |                 |
-| XGBoost              |        | Census Income Data <br> [Notebooks & Training](https://github.com/mchrestkha/machine_learning_examples/tree/master/census/catboost/gcp_ai_platform)        |     |                 |
+| XGBoost              |        | Census Income Data: [Notebooks & Training](https://github.com/mchrestkha/machine_learning_examples/tree/master/census/catboost/gcp_ai_platform)        |     |                 |
 | SKLearn              |         |        |     |                 |
-| CatBoost             |            |  Census Income Data <br>[Notebook & Training](https://github.com/mchrestkha/machine_learning_examples/tree/master/census/xgboost/gcp_ai_platform)      |     |                 |
+| CatBoost             |            |  Census Income Data:[Notebook & Training](https://github.com/mchrestkha/machine_learning_examples/tree/master/census/xgboost/gcp_ai_platform)      |     |                 |
