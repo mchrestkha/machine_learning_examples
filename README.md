@@ -10,11 +10,11 @@
 
 ```
 
-| Framework            | Jupyter Notebook |AI Platform | KubeFlow | MLFlow | 
+| Framework            | Colab Notebook |AI Platform | KubeFlow | MLFlow | 
 | -----------          | ----------- |----------- |----------|----------|
 | TensorFlow Estimator |        |       |     |                 |
 | TensorFlow Keras     |         |        |     |                 |
 | PyTorch              |         |        |     |                 |
-| XGBoost              | X           |        |     |                 |
+| XGBoost              | X       | Notebook <br> Training        |     |                 |
 | SKLearn              |         |        |     |                 |
-| CatBoost             | X           |        |     |                 |
+| CatBoost             | X           |  Notebook <br> Training       |     |                 |
