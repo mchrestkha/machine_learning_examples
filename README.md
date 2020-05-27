@@ -11,10 +11,10 @@
 ```
 
 | Framework            | Jupyter Notebook |AI Platform | KubeFlow | MLFlow | 
-| -----------          | ----------- |----------- |----------|----------|----------- |
-| TensorFlow Estimator | Title       |Title       |Title     |Title                 |Title       |
-| TensorFlow Keras     | Text        |Text        |Title     |Title                 |Title       |
-| PyTorch              | Text        |Text        |Title     |Title                 |Title       |
-| XGBoost              | X        |Text        |Title     |Title                 |Title       |
-| SKLearn              | Text        |Text        |Title     |Title                 |Title       |
-| CatBoost             | X        |Text        |Title     |Title                 |Title       |
+| -----------          | ----------- |----------- |----------|----------|
+| TensorFlow Estimator | Title       |Title       |Title     |Title                 |
+| TensorFlow Keras     | Text        |Text        |Title     |Title                 |
+| PyTorch              | Text        |Text        |Title     |Title                 |
+| XGBoost              | X           |Text        |Title     |Title                 |
+| SKLearn              | Text        |Text        |Title     |Title                 |
+| CatBoost             | X           |Text        |Title     |Title                 |
