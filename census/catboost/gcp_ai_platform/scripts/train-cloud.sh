@@ -1,9 +1,6 @@
 echo "Submitting an AI Platform job..."
 
 
-export MODEL_NAME="catboost_census"
-export MODEL_DIR=gs://${BUCKET_NAME}/${MODEL_NAME}
-
 PROJECT_ID="mchrestkha-demo-env"
 BUCKET_ID="mchrestkha-demo-env-ml-examples"
 JOB_NAME=catboost_census_training_$(date +"%Y%m%d_%H%M%S")
