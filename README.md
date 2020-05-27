@@ -12,9 +12,9 @@
 
 | Framework            | Jupyter Notebook |AI Platform | KubeFlow | MLFlow | 
 | -----------          | ----------- |----------- |----------|----------|
-| TensorFlow Estimator | Title       |Title       |Title     |Title                 |
-| TensorFlow Keras     | Text        |Text        |Title     |Title                 |
-| PyTorch              | Text        |Text        |Title     |Title                 |
-| XGBoost              | X           |Text        |Title     |Title                 |
-| SKLearn              | Text        |Text        |Title     |Title                 |
-| CatBoost             | X           |Text        |Title     |Title                 |
+| TensorFlow Estimator |        |       |     |                 |
+| TensorFlow Keras     |         |        |     |                 |
+| PyTorch              |         |        |     |                 |
+| XGBoost              | X           |        |     |                 |
+| SKLearn              |         |        |     |                 |
+| CatBoost             | X           |        |     |                 |
