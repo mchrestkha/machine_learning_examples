@@ -10,11 +10,11 @@
 
 ```
 
-| Framework   | Colab  |AI Platform Notebooks |
-| ----------- | ----------- |----------- |
+| Framework            | Colab       |AI Platform Notebooks | AI Platform Training | AI Platform Prection | 
+| -----------          | ----------- |----------- |
 | TensorFlow Estimator | Title       |Title       |
-| TensorFlow Keras   | Text        |Text        |
-| PyTorch   | Text        |Text        |
-| XGBoost   | Text        |Text        |
-| SKLearn   | Text        |Text        |
-| CatBoost   | Text        |Text        |
+| TensorFlow Keras     | Text        |Text        |
+| PyTorch              | Text        |Text        |
+| XGBoost              | Text        |Text        |
+| SKLearn              | Text        |Text        |
+| CatBoost             | Text        |Text        |
