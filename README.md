@@ -13,8 +13,7 @@
 | Framework   | Platform  |Description |
 | ----------- | ----------- |----------- |
 | TensorFlow Estimator | Title       |Title       |
-| Paragraph   | Text        |Text        |
-| Paragraph   | Text        |Text        |
-| Paragraph   | Text        |Text        |
-| Paragraph   | Text        |Text        |
-| Paragraph   | Text        |Text        |
+| TensorFlow Keras   | Text        |Text        |
+| XGBoost   | Text        |Text        |
+| SKLearn   | Text        |Text        |
+| CatBoost   | Text        |Text        |
