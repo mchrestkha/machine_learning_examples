@@ -15,6 +15,6 @@
 | TensorFlow Estimator |        |       |     |                 |
 | TensorFlow Keras     |         |        |     |                 |
 | PyTorch              |         |        |     |                 |
-| XGBoost              | X       | Notebook <br> Training        |     |                 |
+| XGBoost              |        | Census Income Data <br> Notebook <br> Training        |     |                 |
 | SKLearn              |         |        |     |                 |
-| CatBoost             | X           |  Notebook <br> Training       |     |                 |
+| CatBoost             |            |  Census Income Data <br>Notebook <br> Training       |     |                 |
