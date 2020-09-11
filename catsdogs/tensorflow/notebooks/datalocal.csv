@@ -1,0 +1,4 @@
+split,image_uri,label
+TRAIN,/home/jupyter/gcs/catsdogs/train/cats/cat.0.jpg,cats
+TRAIN,/home/jupyter/gcs/catsdogs/train/cats/cat.1.jpg,cats
+TRAIN,/home/jupyter/gcs/catsdogs/train/cats/cat.10.jpg,cats
