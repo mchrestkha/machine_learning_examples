@@ -1,7 +1,74 @@
 import gzip
 import json
 from google.cloud import storage
+from datasets import load_dataset
+import random
+import time
+import vertexai
+from vertexai.preview.tuning import sft
+from vertexai.evaluation import EvalTask, MetricPromptTemplateExamples
+import json
+import utils
+import mercury as mr
+import openai
+import os
+import pandas as pd
+from vertexai.preview.generative_models import GenerativeModel, GenerationConfig, Part
+from google.cloud.exceptions import NotFound
 
+def format_tuning_dataset(train_list, valid_list, base_instruction, train_filename, valid_filename):
+
+    # Initialize lists to store messages for training and validation
+    train_messages = []
+    validation_messages = []
+
+    # Iterate over training data and create messages for each dialogue-summary pair
+    for d in train_list:
+      prompts=[]
+      prompts.append({"role": "user", "parts": [{"text": base_instruction + d["dialogue"]}]})
+      prompts.append({"role": "model", "parts": [{"text": d["summary"]}]}) 
+      train_messages.append({'contents': prompts})
+
+    # Iterate over validation data and create messages similarly
+    for d in valid_list:
+      prompts=[]
+      prompts.append({"role": "user", "parts": [{"text": base_instruction + d["dialogue"]}]})
+      prompts.append({"role": "model", "parts": [{"text": d["summary"]}]}) 
+      validation_messages.append({'contents': prompts})
+    
+    # Save to JSON locally
+    dicts_to_jsonl(train_messages, train_filename, False)
+    dicts_to_jsonl(validation_messages, valid_filename, False)
+
+    # Print lengths of message lists and an example training message
+    len(train_messages), len(validation_messages), train_messages[3]
+
+# Delete & Overwrite files to upload to GCS
+def delete_and_upload(filename):
+    try:
+        delete_blob("mchrestkha-sample-data",f"dialogsum/{filename}")
+    except NotFound:
+        pass
+    upload_blob("mchrestkha-sample-data",filename,f"dialogsum/{filename}")    
+
+    
+#Submit Tuning Job
+def tune_gemini(train_file, valid_file, model, model_name):
+    timestr = time.strftime("%Y%m%d-%H%M%S")
+    model_name=model_name+timestr
+    vertexai.init(project="mchrestkha-sandbox", location="us-central1")
+
+    sft_tuning_job = sft.train(
+        source_model=model,
+        train_dataset=train_file,
+        # The following parameters are optional
+        validation_dataset=valid_file,
+        epochs=5,
+        adapter_size=4,
+        learning_rate_multiplier=1.0,
+        tuned_model_display_name=model_name,
+    ) 
+    
 
 def upload_blob(bucket_name, source_file_name, destination_blob_name):
     """Uploads a file to the bucket."""
